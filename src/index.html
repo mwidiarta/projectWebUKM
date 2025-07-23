@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bluetra</title>
+    <!-- Icon Logo-->
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../dist/css/style.css" />
+    <!-- Link FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Link Swipper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="font-inter">
+    <!-- Navbar Section Start-->
+    <header class="fixed z-50 top-0 left-0 w-full transition duration-500">
+      <div class="container mx-auto py-5 flex justify-between items-center">
+        <div class="flex items-center">
+          <a href="#">
+            <img src="images/logo.png" alt="logo" class="w-8" />
+          </a>
+          <a href="#">
+            <h1 class="text-xl text-teal-500 font-bold">
+              BLUE<span class="text-white">TRA</span>
+            </h1>
+          </a>
+        </div>
+        <nav>
+          <ul class="flex gap-4">
+            <li>
+              <a
+                href="#"
+                class="text-sm text-white px-2 hover:text-teal-500 transition"
+                >BERANDA</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="text-sm text-white px-2 hover:text-teal-500 transition"
+                >TENTANG KAMI</a
+              >
+            </li>
+            <li>
+              <a
+                href="#layanan"
+                class="text-sm text-white px-2 hover:text-teal-500 transition"
+                >LAYANAN</a
+              >
+            </li>
+            <li>
+              <a
+                href="#proyek"
+                class="text-sm text-white px-2 hover:text-teal-500 transition"
+                >PROYEK</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimoni"
+                class="text-sm text-white px-2 hover:text-teal-500 transition"
+                >TESTIMONI</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="text-sm text-white px-2 hover:text-teal-500 transition"
+                >KONTAK</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Navbar Section End-->
+
+    <!-- Hero Section Start -->
+    <section>
+      <div class="w-full h-dvh">
+        <img
+          src="images/hero-image.jpg"
+          alt="hero-image"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-black opacity-25"></div>
+        <div class="absolute right-0 left-0 top-1/2 -translate-y-1/3 z-10">
+          <div class="container mx-auto">
+            <h4
+              class="mb-4 pl-20 text-2xl text-white tracking-wide font-semibold"
+            >
+              WE PROVIDE SOLUTIONS
+            </h4>
+            <h1
+              class="mb-6 text-6xl text-white font-bold tracking-wide leading-16"
+            >
+              CLEAN WATER
+              <span class="block text-teal-500">FOR ALL</span>
+            </h1>
+            <p class="mb-20 text-white w-2xl">
+              Kami menghadirkan masa depan yang bersih, aman, dan terjangkau
+              bagi komunitas global dari kota hingga pelosok desa
+            </p>
+            <button
+              class="border-2 border-white rounded-full hover:translate-x-1 transition duration-500"
+            >
+              <a
+                href="#offer"
+                class="px-6 py-4 block text-white text-base font-medium"
+                >Selengkapnya <i class="fa-solid fa-arrow-right ml-2"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Offer Section Start -->
+    <section id="offer" class="mb-20 pt-20">
+      <div class="container mx-auto flex flex-wrap items-center gap-15">
+        <div class="max-w-lg h-[450px] bg-amber-500">
+          <img
+            src="images/whatoffer.jpg"
+            alt="Penelitian Air"
+            class="w-full h-full object-cover select-none"
+          />
+        </div>
+        <div class="w-1/2">
+          <h3 class="mb-2 text-xl text-teal-500 font-bold">What We Offer</h3>
+          <h2 class="mb-6 tracking-wide text-3xl text-slate-800 font-bold">
+            Solusi Air Terintegrasi untuk Masa Depan Berkelanjutan
+          </h2>
+          <p class="mb-10 text-base text-slate-500">
+            Kami menghadirkan solusi pengelolaan air yang praktis,
+            berkelanjutan, dan mudah dijangkau oleh masyarakat. Mulai dari
+            sistem yang memudahkan akses air bersih, hingga pendekatan teknologi
+            yang membantu memantau dan merawat sumber daya air dengan lebih
+            cerdas. Kami percaya bahwa setiap orang berhak atas air yang aman
+            dan layak, dan itulah yang terus kami usahakan melalui setiap
+            layanan kami.
+          </p>
+          <button
+            class="border-2 border-slate-400 rounded-full hover:translate-x-1 transition duration-500"
+          >
+            <a
+              href="#layanan"
+              class="px-6 py-4 block text-slate-900 text-base font-medium"
+              >Selengkapnya <i class="fa-solid fa-arrow-right ml-2"></i
+            ></a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Offer Section End -->
+
+    <!-- Service Section Start -->
+    <section id="layanan" class="py-20 bg-slate-50">
+      <div class="container mx-auto text-center">
+        <h3 class="mb-2 text-xl text-teal-500 font-bold">Layanan Kami</h3>
+        <p class="mb-15 text-base text-slate-900 font-medium">
+          Bluetra hadir menjadi solusi bagi kamu
+        </p>
+        <!-- Card List -->
+        <div class="flex flex-wrap gap-8 justify-center">
+          <!-- card1 -->
+          <div
+            class="text-center max-w-80 px-8 rounded-xl shadow-lg h-64 bg-white group hover:bg-teal-900 transition"
+          >
+            <i
+              class="fa-solid fa-screwdriver-wrench text-4xl mt-4 mb-6 group-hover:text-white"
+            ></i>
+            <h3
+              class="font-semibold tracking-wide text-xl mb-2 text-slate-800 group-hover:text-white"
+            >
+              Bluetra CleanWater
+            </h3>
+            <p class="text-slate-500 text-base group-hover:text-slate-300">
+              Jasa instalasi sistem penyaringan air bersih untuk rumah tangga,
+              sekolah, dan fasilitas umum.
+            </p>
+          </div>
+          <!-- card2 -->
+          <div
+            class="text-center max-w-80 px-8 rounded-xl shadow-lg h-64 bg-white group hover:bg-teal-900 transition"
+          >
+            <i
+              class="fa-solid fa-wheat-awn text-4xl mt-4 mb-6 group-hover:text-white"
+            ></i>
+            <h3
+              class="font-semibold tracking-wide text-xl mb-2 text-slate-800 group-hover:text-white"
+            >
+              SmartIrigasi Bluetra
+            </h3>
+            <p class="text-slate-500 text-base group-hover:text-slate-300">
+              Desain dan implementasi sistem irigasi otomatis dan hemat air
+              untuk lahan pertanian.
+            </p>
+          </div>
+          <!-- card3 -->
+          <div
+            class="text-center max-w-80 px-8 rounded-xl shadow-lg h-64 bg-white group hover:bg-teal-900 transition"
+          >
+            <i
+              class="fa-solid fa-hand-holding-droplet text-4xl mt-4 mb-6 group-hover:text-white"
+            ></i>
+            <h3
+              class="font-semibold tracking-wide text-xl mb-2 text-slate-800 group-hover:text-white"
+            >
+              IoT Water Monitoring
+            </h3>
+            <p class="text-slate-500 text-base group-hover:text-slate-300">
+              Layanan monitoring kualitas dan konsumsi air berbasis sensor dan
+              dashboard online.
+            </p>
+          </div>
+          <!-- card4 -->
+          <div
+            class="text-center max-w-80 px-8 rounded-xl shadow-lg h-64 bg-white group hover:bg-teal-900 transition"
+          >
+            <i
+              class="fa-solid fa-user-gear text-4xl mt-4 mb-6 group-hover:text-white"
+            ></i>
+            <h3
+              class="font-semibold tracking-wide text-xl mb-2 text-slate-800 group-hover:text-white"
+            >
+              Konsultasi & Audit Air
+            </h3>
+            <p class="text-slate-500 text-base group-hover:text-slate-300">
+              Analisis kualitas air serta rekomendasi sistem pengolahan sesuai
+              standar kesehatan.
+            </p>
+          </div>
+          <!-- card5 -->
+          <div
+            class="text-center max-w-80 px-8 rounded-xl shadow-lg h-64 bg-white group hover:bg-teal-900 transition"
+          >
+            <i
+              class="fa-solid fa-book-open-reader text-4xl mt-4 mb-6 group-hover:text-white"
+            ></i>
+            <h3
+              class="font-semibold tracking-wide text-xl mb-2 text-slate-800 group-hover:text-white"
+            >
+              Program Edu+Air
+            </h3>
+            <p class="text-slate-500 text-base group-hover:text-slate-300">
+              Pelatihan dan edukasi komunitas tentang pengelolaan air
+              berkelanjutan dan literasi teknologi air.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service Section Start -->
+
+    <!-- About Section Start -->
+    <section>
+      <div class="w-full relative h-[480px]">
+        <img
+          src="images/about.png"
+          alt="Foto Tentang Kami"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="absolute right-0 left-0 top-1/2 -translate-y-1/2 z-10">
+          <div class="container mx-auto">
+            <h4 class="mb-2 text-base text-white font-semibold uppercase">
+              Sekilas tentang kami
+            </h4>
+            <h2 class="mb-6 text-4xl text-white font-bold">Tentang Kami</h2>
+            <p class="w-2xl mb-12 text-base text-slate-300">
+              Bluetra adalah perusahaan penyedia jasa teknologi air yang
+              menghadirkan solusi pengelolaan air bersih yang inovatif,
+              berkelanjutan, dan mudah diakses di seluruh Indonesia, termasuk
+              daerah 3T.
+            </p>
+            <button
+              class="border-2 border-white rounded-full hover:translate-x-1 transition duration-500"
+            >
+              <a
+                href="about.html#about"
+                class="px-6 py-4 block text-white text-base font-medium"
+                >Selengkapnya <i class="fa-solid fa-arrow-right ml-2"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Project Section Start -->
+    <section id="proyek" class="overflow-x-hidden my-10 pt-10">
+      <div class="container mx-auto">
+        <h3 class="mb-3 text-xl text-teal-500 font-bold">Proyek Kami</h3>
+        <div class="mb-10 flex flex-wrap justify-between">
+          <h2 class="uppercase tracking-wide text-3xl text-slate-800 font-bold">
+            Apa yang telah kami capai
+          </h2>
+          <p class="text-base text-slate-500 font-normal text-justify w-3xl">
+            Bluetra telah melaksanakan berbagai inisiatif untuk memperluas akses
+            air bersih dan teknologi air pintar di berbagai pelosok Indonesia.
+            Kami percaya bahwa setiap proyek adalah langkah nyata menuju
+            keberlanjutan dan keadilan air untuk semua.
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full h-[500px] relative">
+        <div
+          class="w-1/2 bg-gray-500 h-full absolute left-0 top-0 z-1 rounded-r-lg overflow-hidden"
+        >
+          <img
+            id="main-image"
+            class="w-full h-full object-cover select-none"
+            src="images/gambar1.jpg"
+            alt="Instalasi Sistem Bluetra CleanWater"
+          />
+        </div>
+        <!-- Card List -->
+        <div
+          class="absolute h-fit w-full top-1/2 -translate-1/2 left-1/2 -translate-x-14 z-2"
+        >
+          <div id="group-card1" class="flex gap-8 select-none">
+            <!-- Card 1-->
+            <div
+              data-image="images/gambar1.jpg"
+              class="cardJs max-w-80 p-8 rounded-xl shadow-lg h-96 bg-white group hover:bg-teal-900 cursor-pointer transition"
+            >
+              <h3
+                class="font-semibold tracking-wide text-2xl mb-2 text-slate-800 group-hover:text-white"
+              >
+                Instalasi Sistem Bluetra CleanWater
+              </h3>
+              <h4 class="mb-6 text-base text-slate-800 group-hover:text-white">
+                Lokasi: Kecamatan Sape, NTB
+              </h4>
+              <p class="text-slate-500 text-base group-hover:text-slate-300">
+                Membangun sistem penyaringan air bersih berbasis energi surya
+                untuk lebih dari 80 kepala keluarga di Desa Sumberjati yang
+                sebelumnya mengandalkan air sungai keruh.
+              </p>
+            </div>
+            <!-- Card 2-->
+            <div
+              data-image="images/gambar2.jpg"
+              class="cardJs max-w-80 p-8 rounded-xl shadow-lg h-96 bg-white group hover:bg-teal-900 cursor-pointer transition"
+            >
+              <h3
+                class="font-semibold tracking-wide text-2xl mb-2 text-slate-800 group-hover:text-white"
+              >
+                SmartIrigasi Bluetra di Lahan Pertanian Desa
+              </h3>
+              <h4 class="mb-6 text-base text-slate-800 group-hover:text-white">
+                Lokasi: Bojonegoro, Jawa Timur
+              </h4>
+              <p class="text-slate-500 text-base group-hover:text-slate-300">
+                Merancang sistem irigasi otomatis hemat air untuk 10 hektar
+                sawah tadah hujan, dengan pompa tenaga surya dan sensor
+                kelembapan tanah.
+              </p>
+            </div>
+          </div>
+
+          <div id="group-card2" class="hidden gap-8 select-none">
+            <!-- Card 3-->
+            <div
+              data-image="images/gambar3.jpg"
+              class="cardJs max-w-80 p-8 rounded-xl shadow-lg h-96 bg-white group hover:bg-teal-900 cursor-pointer transition"
+            >
+              <h3
+                class="font-semibold tracking-wide text-2xl mb-2 text-slate-800 group-hover:text-white"
+              >
+                Monitoring Kualitas Air Sekolah
+              </h3>
+              <h4 class="mb-6 text-base text-slate-800 group-hover:text-white">
+                Lokasi: SMP Labuan Bajo, NTT
+              </h4>
+              <p class="text-slate-500 text-base group-hover:text-slate-300">
+                Pemasangan sensor kualitas air dan dashboard online untuk
+                memantau air minum di sekolah.
+              </p>
+            </div>
+            <!-- Card 4-->
+            <div
+              data-image="images/gambar4.jpg"
+              class="cardJs max-w-80 p-8 rounded-xl shadow-lg h-96 bg-white group hover:bg-teal-900 cursor-pointer transition"
+            >
+              <h3
+                class="font-semibold tracking-wide text-2xl mb-2 text-slate-800 group-hover:text-white"
+              >
+                Audit Air & Konsultasi untuk Puskesmas Rawat Inap
+              </h3>
+              <h4 class="mb-6 text-base text-slate-800 group-hover:text-white">
+                Lokasi: Banjarnegara, Jawa Tengah
+              </h4>
+              <p class="text-slate-500 text-base group-hover:text-slate-300">
+                Melakukan audit sistem pengolahan air untuk Puskesmas,
+                mengevaluasi kebersihan air untuk kebutuhan medis dan konsumsi.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- button -->
+        <div
+          class="absolute z-3 bottom-0 right-1/12 border border-slate-500 rounded-lg group hover:bg-teal-900 hover:border-teal-900 transition"
+        >
+          <button
+            id="nextBtn"
+            class="px-4 py-3 text-slate-500 group-hover:text-white cursor-pointer"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Project Section End -->
+
+    <!-- Testimoni Section Start -->
+    <section id="testimoni" class="my-10 py-20 bg-slate-50">
+      <div class="container mx-auto">
+        <div class="text-center mb-10">
+          <h3 class="mb-3 text-xl text-teal-500 font-bold">Testimoni</h3>
+          <h2 class="uppercase tracking-wide text-3xl text-slate-800 font-bold">
+            Apa Kata Mereka Tentang Kami
+          </h2>
+        </div>
+        <!-- cardlist -->
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper mb-8">
+            <!-- card1 -->
+            <div
+              class="swiper-slide rounded-xl shadow-lg overflow-hidden bg-white group hover:bg-teal-900 transition select-none"
+            >
+              <div class="p-8 h-96 flex flex-col justify-between">
+                <p class="text-slate-500 text-base group-hover:text-slate-300">
+                  <q
+                    >Dulu kami hanya mengandalkan air sungai yang keruh. Setelah
+                    Bluetra membangun sistem air bersih di desa kami, hidup
+                    terasa jauh lebih sehat dan mudah. Anak-anak pun bisa minum
+                    langsung dari keran!</q
+                  >
+                </p>
+                <div class="w-full flex items-center">
+                  <img
+                    src="images/person1.png"
+                    alt="Foto Ibu Nurhayati"
+                    class="w-14 h-14 rounded-full mr-4 shadow-md bg-slate-200"
+                  />
+                  <h4
+                    class="font-bold text-lg text-slate-800 group-hover:text-white"
+                  >
+                    Ibu Nurhayati
+                    <span class="block text-base font-normal text-teal-500"
+                      >Penduduk</span
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- card2 -->
+            <div
+              class="swiper-slide rounded-xl shadow-lg overflow-hidden bg-white group hover:bg-teal-900 transition select-none"
+            >
+              <div class="p-8 h-96 flex flex-col justify-between">
+                <p class="text-slate-500 text-base group-hover:text-slate-300">
+                  <q
+                    >SmartIrigasi dari Bluetra benar-benar membantu kami.
+                    Sekarang air tidak terbuang sia-sia dan panen kami
+                    meningkat. Teknologi seperti ini sangat kami butuhkan.</q
+                  >
+                </p>
+                <div class="w-full flex items-center">
+                  <img
+                    src="images/person2.png"
+                    alt="Foto Pak Sukardi"
+                    class="w-14 h-14 rounded-full mr-4 shadow-md bg-slate-200"
+                  />
+                  <h4
+                    class="font-bold text-lg text-slate-800 group-hover:text-white"
+                  >
+                    Pak Sukardi
+                    <span class="block text-base font-normal text-teal-500"
+                      >Petani</span
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- card3 -->
+            <div
+              class="swiper-slide rounded-xl shadow-lg overflow-hidden bg-white group hover:bg-teal-900 transition select-none"
+            >
+              <div class="p-8 h-96 flex flex-col justify-between">
+                <p class="text-slate-500 text-base group-hover:text-slate-300">
+                  <q
+                    >Dashboard pemantauan air dari Bluetra sangat berguna. Kami
+                    jadi tahu kondisi air setiap hari dan bisa memastikan
+                    siswa-siswi kami minum air yang aman.</q
+                  >
+                </p>
+                <div class="w-full flex items-center">
+                  <img
+                    src="images/person3.png"
+                    alt="Foto Bu Desi"
+                    class="w-14 h-14 rounded-full mr-4 shadow-md bg-slate-200"
+                  />
+                  <h4
+                    class="font-bold text-lg text-slate-800 group-hover:text-white"
+                  >
+                    Bu Desi
+                    <span class="block text-base font-normal text-teal-500"
+                      >Kepala Sekolah</span
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- card4 -->
+            <div
+              class="swiper-slide rounded-xl shadow-lg overflow-hidden bg-white group hover:bg-teal-900 transition select-none"
+            >
+              <div class="p-8 h-96 flex flex-col justify-between">
+                <p class="text-slate-500 text-base group-hover:text-slate-300">
+                  <q
+                    >Tim Bluetra sangat profesional. Setelah audit air
+                    dilakukan, mereka bantu kami menyiapkan sistem filtrasi
+                    baru. Sekarang kami bisa pastikan semua pasien menggunakan
+                    air steril di layanan medis.</q
+                  >
+                </p>
+                <div class="w-full flex items-center">
+                  <img
+                    src="images/person4.png"
+                    alt="Foto Dr. Riko"
+                    class="w-14 h-14 rounded-full mr-4 shadow-md bg-slate-200"
+                  />
+                  <h4
+                    class="font-bold text-lg text-slate-800 group-hover:text-white"
+                  >
+                    Dr. Riko
+                    <span class="block text-base font-normal text-teal-500"
+                      >Kepala Puskesmas</span
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- card5 -->
+            <div
+              class="swiper-slide rounded-xl shadow-lg overflow-hidden bg-white group hover:bg-teal-900 transition select-none"
+            >
+              <div class="p-8 h-96 flex flex-col justify-between">
+                <p class="text-slate-500 text-base group-hover:text-slate-300">
+                  <q
+                    >Kolaborasi kami dengan Bluetra untuk pemasangan sensor
+                    kualitas air sangat mulus. Mereka bukan hanya ahli teknis,
+                    tapi juga peduli pada edukasi masyarakat. Dampaknya sangat
+                    terasa di komunitas kami.</q
+                  >
+                </p>
+                <div class="w-full flex items-center">
+                  <img
+                    src="images/person5.png"
+                    alt="Foto Pak Andi"
+                    class="w-14 h-14 rounded-full mr-4 shadow-md bg-slate-200"
+                  />
+                  <h4
+                    class="font-bold text-lg text-slate-800 group-hover:text-white"
+                  >
+                    Pak Andi
+                    <span class="block text-base font-normal text-teal-500"
+                      >Koordinator NGO</span
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimoni Section End -->
+
+    <!-- CTA Section Start -->
+    <section class="my-10 py-20">
+      <div class="container text-center">
+        <h2 class="text-5xl font-bold tracking-wide leading-14 mb-4">
+          Butuh solusi air bersih?<span class="block"
+            >Kami <span class="text-teal-500">Solusinya!</span></span
+          >
+        </h2>
+        <p class="text-base text-slate-500 mb-8">
+          Bersama Bluetra, mari wujudkan akses air bersih yang layak dan
+          berkelanjutan.
+          <span class="block"
+            >Jangan ragu, hubungi kami sekarang — Bluetra siap bantu.</span
+          >
+        </p>
+        <button
+          class="bg-teal-900 rounded-full hover:bg-teal-950 hover:translate-x-1 transition duration-500"
+        >
+          <a
+            href="contact.html"
+            class="px-6 py-4 block text-white text-base font-medium"
+            >Hubungi Kami <i class="fa-solid fa-arrow-right ml-2"></i
+          ></a>
+        </button>
+      </div>
+    </section>
+    <!-- CTA Section End -->
+
+    <!-- Footer Section Start -->
+    <section id="footer" class="mt-10 pt-10 bg-slate-50">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap justify-between mb-8">
+          <div>
+            <div class="flex items-center mb-3">
+              <img src="images/logo.png" alt="logo" class="w-16" />
+              <h1 class="text-3xl text-slate-900 font-bold tracking-wide">
+                <span class="text-teal-500">BLUE</span>TRA
+              </h1>
+            </div>
+            <p class="text-base text-slate-500 w-md">
+              Bluetra menghadirkan solusi air bersih berbasis teknologi yang
+              berkelanjutan untuk seluruh Indonesia.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold text-slate-900 mb-4">Navigasi</h4>
+            <ul class="flex flex-col gap-3">
+              <li class="">
+                <a
+                  href="#"
+                  class="text-slate-500 hover:text-slate-700 transition"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-slate-500 hover:text-slate-700 transition"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#layanan"
+                  class="text-slate-500 hover:text-slate-700 transition"
+                  >Layanan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#proyek"
+                  class="text-slate-500 hover:text-slate-700 transition"
+                  >Proyek</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#testimoni"
+                  class="text-slate-500 hover:text-slate-700 transition"
+                  >Testimoni</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-slate-500 hover:text-slate-700 transition"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold text-slate-900 mb-4">
+              Kontak Perusahaan
+            </h4>
+            <div class="flex flex-col gap-3">
+              <p class="text-base text-secondary">
+                Jl. Tirta Lestari No. 17
+                <br />Kelurahan Airsejuk, Kecamatan Biru Tengah <br />Kota Biru,
+                Sumatra 70652 <br />Indonesia
+              </p>
+              <p class="text-base text-slate-500">
+                <i class="fa-solid fa-phone"></i> (0361) 112-2427
+              </p>
+              <a href="" class="text-base text-slate-500"
+                ><i class="fa-solid fa-envelope"></i> info@bluetra.id</a
+              >
+              <div class="flex gap-6">
+                <a href="#" class="text-xl text-slate-500 hover:text-slate-800"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="#" class="text-xl text-slate-500 hover:text-slate-800"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#" class="text-xl text-slate-500 hover:text-slate-800"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+                <a href="#" class="text-xl text-slate-500 hover:text-slate-800"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="#" class="text-xl text-slate-500 hover:text-slate-800"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <hr class="text-slate-200" />
+          <p class="text-base text-slate-500 py-4">
+            Copyright &copy; 2025 Bluetra. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Script Swipper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Script Js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
