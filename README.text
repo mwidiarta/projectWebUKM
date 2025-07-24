@@ -1,0 +1,11 @@
+CARA MEMBUKA WEBSITE:
+1. Buka folder `/dist`.
+2. Klik dua kali file `index.html` (atau buka lewat browser).
+3. Website akan tampil lengkap.
+
+CATATAN TEKNIS:
+- Tidak memerlukan proses build tambahan untuk juri.
+- Tidak perlu install npm atau Tailwind CLI jika hanya ingin membuka hasil akhir.
+- Jika ingin rebuild Tailwind dari `input.css`, gunakan perintah:
+  npx tailwindcss -i ./src/input.css -o ./docs/style.css --minify
+- AOS digunakan via CDN, tidak memerlukan instalasi tambahan.

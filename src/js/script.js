@@ -1,3 +1,6 @@
+// Initialize AOS
+AOS.init();
+
 // Navbar Fixed
 let lastScroll = 0;
 const header = document.querySelector("header");
@@ -35,7 +38,7 @@ window.addEventListener("scroll", () => {
   lastScroll = valueScroll <= 0 ? 0 : valueScroll;
 });
 
-// Js Project Section Pagination
+// Project Section Pagination
 const group1 = document.getElementById("group-card1");
 const group2 = document.getElementById("group-card2");
 const mainImage = document.getElementById("main-image");
@@ -63,7 +66,7 @@ document.querySelectorAll(".cardJs").forEach((card) => {
   });
 });
 
-// JS Testimoni Section
+// Testimoni Section
 // Swipper
 const swiper = new Swiper(".swiper", {
   slidesPerView: 4,
