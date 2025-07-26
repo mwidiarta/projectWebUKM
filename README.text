@@ -9,7 +9,7 @@ Struktur Folder:
 - package.json & package-lock.json : Berisi daftar dependensi project
 
 CARA MELIHAT PROJECT WEB:
-1. Buka file docs/index.html di browser
+1. Buka file dist/index.html di browser
    (JANGAN membuka src/index.html karena file ini belum terhubung ke CSS hasil build)
 
 Terima kasih.
