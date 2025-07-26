@@ -1,11 +1,15 @@
-CARA MEMBUKA WEBSITE:
-1. Buka folder `/dist`.
-2. Klik dua kali file `index.html` (atau buka lewat browser).
-3. Website akan tampil lengkap.
+PROJECT COMPANY PROFILE - COMPUTER CLUB DIGITAL TALENT 2025
 
-CATATAN TEKNIS:
-- Tidak memerlukan proses build tambahan untuk juri.
-- Tidak perlu install npm atau Tailwind CLI jika hanya ingin membuka hasil akhir.
-- Jika ingin rebuild Tailwind dari `input.css`, gunakan perintah:
-  npx tailwindcss -i ./src/input.css -o ./docs/style.css --minify
-- AOS digunakan via CDN, tidak memerlukan instalasi tambahan.
+Deskripsi
+Website ini dibangun menggunakan Tailwind CSS v4 (melalui CLI), HTML, dan JavaScript, serta dilengkapi dengan animasi dari AOS.
+
+Struktur Folder:
+- src : Berisi file sumber HTML, gambar, input.css, dan JavaScript
+- dist : Berisi hasil akhir (final output) yang siap ditampilkan di browser
+- package.json & package-lock.json : Berisi daftar dependensi project
+
+CARA MELIHAT PROJECT WEB:
+1. Buka file docs/index.html di browser
+   (JANGAN membuka src/index.html karena file ini belum terhubung ke CSS hasil build)
+
+Terima kasih.

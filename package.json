@@ -10,7 +10,7 @@
     "dev": "npx @tailwindcss/cli -i ./src/css/input.css -o ./dist/css/style.css --watch",
     "copy:html": "shx cp src/*.html dist/",
     "copy:assets": "shx mkdir -p dist/images && shx cp -r src/images/* dist/images",
-    "copy:js": "shx mkdir -p dist/js && shx cp src/js/script.js dist/js",
+    "copy:js": "shx mkdir -p dist/js && shx cp src/js/*.js dist/js",
     "build:css": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/style.css --minify",
     "build": "npm run copy:html && npm run copy:assets && npm run copy:js && npm run build:css"
   }

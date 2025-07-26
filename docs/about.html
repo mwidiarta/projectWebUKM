@@ -13,11 +13,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <!-- Link CDN Animasi AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="font-inter">
     <!-- Navbar Section Start-->
     <header class="fixed z-50 top-0 left-0 w-full transition duration-500">
-      <div class="container mx-auto py-5 flex justify-between items-center">
+      <div class="container mx-auto p-5 flex justify-between items-center">
         <div class="flex items-center">
           <a href="index.html">
             <img src="images/logo.png" alt="logo" class="w-8" />
@@ -88,7 +90,7 @@
         />
         <div class="absolute inset-0 bg-black opacity-70"></div>
         <div class="absolute right-0 left-0 top-1/2 -translate-y-1/6 z-10">
-          <div class="container mx-auto">
+          <div class="container mx-auto px-5">
             <h3
               class="mb-4 text-lg text-white tracking-wide font-semibold uppercase"
             >
@@ -112,30 +114,49 @@
     <!-- About Section Start -->
     <section id="about">
       <div
-        class="container my-5 py-10 mx-auto flex flex-wrap justify-between items-center"
+        class="container my-5 px-5 py-10 mx-auto flex flex-wrap justify-between items-center"
       >
         <div class="w-1/2 pr-5">
-          <h3 class="mb-3 text-xl text-primary font-bold">Tentang Bluetra</h3>
-          <p class="mb-2 text-secondary">
-            Bluetra adalah perusahaan penyedia jasa teknologi air yang
-            berkomitmen untuk menghadirkan solusi inovatif, berkelanjutan, dan
-            mudah diakses dalam pengelolaan air bersih di Indonesia.
-          </p>
-          <p class="mb-2 text-secondary">
-            Kami hadir untuk menjawab tantangan akses air bersih di berbagai
-            wilayah, khususnya daerah-daerah yang belum terlayani dengan baik
-            oleh infrastruktur air konvensional, termasuk kawasan 3T (Terdepan,
-            Terluar, Tertinggal). Bluetra menggabungkan pendekatan teknik,
-            edukasi masyarakat, dan digitalisasi sistem air untuk memberikan
-            layanan yang menyeluruh, mulai dari instalasi, pemeliharaan, hingga
-            monitoring kualitas air secara real-time.
-          </p>
-          <p class="text-secondary">
-            Kami percaya bahwa air bersih bukan hanya kebutuhan, tetapi juga hak
-            dasar yang harus dijamin secara adil dan berkelanjutan.
-          </p>
+          <h3
+            class="mb-3 text-xl text-primary font-bold"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="900"
+          >
+            Tentang Bluetra
+          </h3>
+          <div
+            class="text-secondary text-justify"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="900"
+          >
+            <p class="mb-2">
+              Bluetra adalah perusahaan penyedia jasa teknologi air yang
+              berkomitmen untuk menghadirkan solusi inovatif, berkelanjutan, dan
+              mudah diakses dalam pengelolaan air bersih di Indonesia.
+            </p>
+            <p class="mb-2">
+              Kami hadir untuk menjawab tantangan akses air bersih di berbagai
+              wilayah, khususnya daerah-daerah yang belum terlayani dengan baik
+              oleh infrastruktur air konvensional, termasuk kawasan 3T
+              (Terdepan, Terluar, Tertinggal). Bluetra menggabungkan pendekatan
+              teknik, edukasi masyarakat, dan digitalisasi sistem air untuk
+              memberikan layanan yang menyeluruh, mulai dari instalasi,
+              pemeliharaan, hingga monitoring kualitas air secara real-time.
+            </p>
+            <p>
+              Kami percaya bahwa air bersih bukan hanya kebutuhan, tetapi juga
+              hak dasar yang harus dijamin secara adil dan berkelanjutan.
+            </p>
+          </div>
         </div>
-        <div class="w-lg h-80 rounded-lg overflow-hidden">
+        <div
+          class="w-lg h-80 rounded-lg overflow-hidden"
+          data-aos="fade-left"
+          data-aos-delay="500"
+          data-aos-duration="900"
+        >
           <img
             src="images/about-page.png"
             alt="foto tentang kami"
@@ -148,7 +169,7 @@
 
     <!-- Sejarah Sectiion Start -->
     <section>
-      <div class="w-full h-[450px] relative">
+      <div class="w-full h-[500px] relative">
         <img
           src="images/sejarah.png"
           alt="sejarah bluetra"
@@ -157,34 +178,47 @@
 
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="absolute right-0 left-0 top-1/2 -translate-y-1/2 z-10">
-          <div class="container mx-auto">
-            <h3 class="mb-8 text-lg text-white tracking-wide font-semibold">
+          <div class="container mx-auto px-5">
+            <h3
+              class="mb-8 text-lg text-white tracking-wide font-semibold"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="900"
+            >
               Sejarah Bluetra
             </h3>
-
-            <p class="mb-2 text-slate-300 w-full">
-              Bluetra didirikan pada tahun 2012 sebagai respons atas
-              permasalahan krisis air bersih yang masih terjadi di banyak
-              wilayah terpencil Indonesia. Awalnya, Bluetra merupakan inisiatif
-              komunitas kecil yang melakukan instalasi sistem penjernihan air
-              sederhana di desa-desa di Nusa Tenggara Timur. Proyek awal ini
-              berhasil memberikan dampak nyata bagi masyarakat setempat, hingga
-              akhirnya berkembang menjadi gerakan yang lebih besar.
-            </p>
-            <p class="mb-2 text-slate-300 w-full">
-              Melihat tingginya kebutuhan akan teknologi pengelolaan air yang
-              efisien, Bluetra kemudian bertransformasi menjadi perusahaan
-              berbasis teknologi yang fokus pada solusi air bersih
-              berkelanjutan. Seiring waktu, Bluetra mulai mengembangkan sistem
-              digital untuk pemantauan kualitas air, serta memperluas layanan ke
-              berbagai sektor, termasuk industri, pendidikan, dan pemerintahan.
-            </p>
-            <p class="text-slate-300 w-full">
-              Dengan misi menyediakan akses air bersih yang adil dan merata,
-              Bluetra terus tumbuh dan berinovasi hingga kini dikenal sebagai
-              salah satu pionir dalam pengelolaan air berbasis teknologi di
-              Indonesia.
-            </p>
+            <div
+              class="text-slate-300 w-full text-justify"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="900"
+            >
+              <p class="mb-2">
+                Bluetra didirikan pada tahun 2012 sebagai respons atas
+                permasalahan krisis air bersih yang masih terjadi di banyak
+                wilayah terpencil Indonesia. Awalnya, Bluetra merupakan
+                inisiatif komunitas kecil yang melakukan instalasi sistem
+                penjernihan air sederhana di desa-desa di Nusa Tenggara Timur.
+                Proyek awal ini berhasil memberikan dampak nyata bagi masyarakat
+                setempat, hingga akhirnya berkembang menjadi gerakan yang lebih
+                besar.
+              </p>
+              <p class="mb-2">
+                Melihat tingginya kebutuhan akan teknologi pengelolaan air yang
+                efisien, Bluetra kemudian bertransformasi menjadi perusahaan
+                berbasis teknologi yang fokus pada solusi air bersih
+                berkelanjutan. Seiring waktu, Bluetra mulai mengembangkan sistem
+                digital untuk pemantauan kualitas air, serta memperluas layanan
+                ke berbagai sektor, termasuk industri, pendidikan, dan
+                pemerintahan.
+              </p>
+              <p>
+                Dengan misi menyediakan akses air bersih yang adil dan merata,
+                Bluetra terus tumbuh dan berinovasi hingga kini dikenal sebagai
+                salah satu pionir dalam pengelolaan air berbasis teknologi di
+                Indonesia.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -194,7 +228,12 @@
     <!-- Section Visi Misi Start-->
     <section class="py-20 bg-slate-50">
       <div class="relative w-full h-[500px] flex">
-        <div class="w-1/2 h-full rounded-r-lg overflow-hidden">
+        <div
+          class="w-1/2 h-full rounded-r-lg overflow-hidden"
+          data-aos="fade-right"
+          data-aos-delay="300"
+          data-aos-duration="900"
+        >
           <img
             class="w-full h-full object-cover select-none"
             src="images/visiMisi.png"
@@ -203,21 +242,55 @@
         </div>
 
         <div class="ml-10 px-5 w-2xl">
-          <h3 class="mb-3 text-xl text-primary font-bold text-center">
+          <h3
+            class="mb-3 text-xl text-primary font-bold text-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="900"
+          >
             Visi & Misi
           </h3>
-          <h2 class="tracking-wide text-3xl text-dark font-bold text-center">
+          <h2
+            class="tracking-wide text-3xl text-dark font-bold text-center"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="900"
+          >
             Landasan Dari Setiap Solusi Kami
           </h2>
           <div class="mt-16">
-            <h4 class="mb-2 text-lg text-dark font-semibold">Visi</h4>
-            <p class="mb-5 text-secondary">
+            <h4
+              class="mb-2 text-lg text-dark font-semibold"
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="900"
+            >
+              Visi
+            </h4>
+            <p
+              class="mb-5 text-secondary"
+              data-aos="fade-up"
+              data-aos-delay="800"
+              data-aos-duration="900"
+            >
               Menjadi pelopor penyedia jasa dan teknologi pengelolaan air yang
               terdepan, inklusif, dan berkelanjutan untuk seluruh lapisan
               masyarakat.
             </p>
-            <h4 class="mb-2 text-lg text-dark font-semibold">Misi</h4>
-            <ul class="ml-5 list-disc">
+            <h4
+              class="mb-2 text-lg text-dark font-semibold"
+              data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="900"
+            >
+              Misi
+            </h4>
+            <ul
+              class="ml-5 list-disc"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+              data-aos-duration="900"
+            >
               <li class="text-base text-secondary">
                 Instalasi & perawatan sistem air bersih yang efisien dan ramah
                 lingkungan
@@ -246,6 +319,9 @@
       <div class="container mx-auto">
         <h2
           class="mb-10 tracking-wide text-3xl text-dark font-bold text-center"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="900"
         >
           Nilai-Nilai Perusahaan
         </h2>
@@ -254,6 +330,9 @@
           <!-- card1 -->
           <div
             class="h-52 max-w-72 text-center px-5 rounded-xl shadow-lg bg-white group hover:bg-teal-900 transition"
+            data-aos="fade-left"
+            data-aos-delay="500"
+            data-aos-duration="1100"
           >
             <i
               class="fa-solid fa-leaf text-4xl my-6 group-hover:text-white"
@@ -270,6 +349,9 @@
           <!-- card2 -->
           <div
             class="h-52 max-w-72 text-center px-5 rounded-xl shadow-lg bg-white group hover:bg-teal-900 transition"
+            data-aos="fade-left"
+            data-aos-delay="700"
+            data-aos-duration="1100"
           >
             <i
               class="fa-solid fa-lightbulb text-4xl my-6 group-hover:text-white"
@@ -286,6 +368,9 @@
           <!-- card3 -->
           <div
             class="h-52 max-w-72 text-center px-5 rounded-xl shadow-lg bg-white group hover:bg-teal-900 transition"
+            data-aos="fade-left"
+            data-aos-delay="900"
+            data-aos-duration="1100"
           >
             <i
               class="fa-solid fa-unlock-keyhole text-4xl my-6 group-hover:text-white"
@@ -302,6 +387,9 @@
           <!-- card4 -->
           <div
             class="h-52 max-w-72 text-center px-5 rounded-xl shadow-lg bg-white group hover:bg-teal-900 transition"
+            data-aos="fade-left"
+            data-aos-delay="1000"
+            data-aos-duration="1100"
           >
             <i
               class="fa-solid fa-handshake text-4xl my-6 group-hover:text-white"
@@ -430,6 +518,12 @@
     </section>
     <!-- Footer Section End -->
 
+    <!-- Script Animasi AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Initialize AOS -->
+    <script src="js/InitializeAOS.js"></script>
+
+    <!-- Script Js -->
     <script src="js/script.js"></script>
   </body>
 </html>

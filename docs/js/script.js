@@ -1,6 +1,3 @@
-// Initialize AOS
-AOS.init();
-
 // Navbar Fixed
 let lastScroll = 0;
 const header = document.querySelector("header");
