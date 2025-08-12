@@ -1,66 +1,100 @@
-// Navbar Fixed
+// // Navbar Fixed
 let lastScroll = 0;
 const header = document.querySelector("header");
 const textElements = header.querySelectorAll(".text-white");
+const hamburger = document.querySelector("#hamburger");
+const navMenu = document.querySelector("#nav-menu");
 
+let isMenuOpen = false;
+//Fungsi update warna teks
+function setNavbarTextWhite() {
+  textElements.forEach((el) => {
+    el.classList.add("text-white");
+    el.classList.remove("text-slate-900");
+  });
+}
+function setNavbarTextDark() {
+  textElements.forEach((el) => {
+    el.classList.remove("text-white");
+    el.classList.add("text-slate-900");
+  });
+}
+// Scroll hide/show navbar
 window.addEventListener("scroll", () => {
   let valueScroll =
     document.documentElement.scrollTop || document.body.scrollTop;
   const fixedNav = header.offsetTop;
-  if (window.pageYOffset == fixedNav) {
-    // console.log("tetap");
-    header.classList.remove("bg-white");
-    header.classList.remove("shadow-sm");
-    textElements.forEach((el) => {
-      el.classList.add("text-white");
-      el.classList.remove("text-slate-900");
-    });
-  } else if (valueScroll > lastScroll) {
-    // console.log("bottom");
-    header.classList.add("-translate-y-full");
-    header.classList.remove("bg-white");
-    header.classList.remove("translate-y-0");
-  } else {
-    // console.log("top");
-    header.classList.add("translate-y-0");
-    header.classList.add("bg-white");
-    header.classList.add("shadow-sm");
-    header.classList.remove("-translate-y-full");
 
-    textElements.forEach((el) => {
-      el.classList.remove("text-white");
-      el.classList.add("text-slate-900");
-    });
+  if (window.pageYOffset <= fixedNav && !isMenuOpen) {
+    // Top
+    header.classList.remove("bg-white", "shadow-sm");
+    setNavbarTextWhite();
+  } else if (valueScroll > lastScroll && !isMenuOpen) {
+    // Bottom Scroll
+    header.classList.add("-translate-y-full");
+    header.classList.remove("translate-y-0", "bg-white");
+  } else {
+    // Top Scroll
+    header.classList.add("translate-y-0", "bg-white", "shadow-sm");
+    header.classList.remove("-translate-y-full");
+    setNavbarTextDark();
   }
+
   lastScroll = valueScroll <= 0 ? 0 : valueScroll;
 });
+// Humburger menu
+hamburger.addEventListener("click", () => {
+  isMenuOpen = !isMenuOpen;
 
-// Project Section Pagination
-const group1 = document.getElementById("group-card1");
-const group2 = document.getElementById("group-card2");
-const mainImage = document.getElementById("main-image");
-const nextButton = document.getElementById("nextBtn");
-let showingFirst = true;
-nextButton.addEventListener("click", () => {
-  if (showingFirst) {
-    group1.classList.add("hidden");
-    group1.classList.remove("flex");
-    group2.classList.remove("hidden");
-    group2.classList.add("flex");
+  if (isMenuOpen) {
+    // Show menu
+    navMenu.classList.remove("opacity-0", "-translate-x-full");
+    navMenu.classList.add("opacity-100", "translate-x-0");
+    hamburger.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+
+    // Merubah navbar
+    header.classList.add("bg-white", "shadow-sm", "translate-y-0");
+    setNavbarTextDark();
   } else {
-    group2.classList.add("hidden");
-    group2.classList.remove("flex");
-    group1.classList.remove("hidden");
-    group1.classList.add("flex");
+    // Close Menu
+    navMenu.classList.add("opacity-0", "-translate-x-full");
+    navMenu.classList.remove("opacity-100", "translate-x-0");
+    hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
+
+    if (window.scrollY <= 0) {
+      header.classList.remove("bg-white", "shadow-sm");
+      setNavbarTextWhite();
+    }
   }
-  showingFirst = !showingFirst;
 });
 
-document.querySelectorAll(".cardJs").forEach((card) => {
-  card.addEventListener("click", () => {
-    const imgPath = card.dataset.image;
-    mainImage.src = imgPath;
+// Swipper Manual
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".cardJs");
+  const mainImage = document.getElementById("main-image");
+  const nextBtn = document.getElementById("nextBtn");
+
+  let currentIndex = 0;
+
+  // Fungsi Perulangan Card
+  function showCard(index) {
+    cards.forEach((card) => card.classList.add("hidden"));
+
+    cards[index].classList.remove("hidden");
+    const newImage = cards[index].getAttribute("data-image");
+    mainImage.src = newImage;
+  }
+
+  nextBtn.addEventListener("click", function () {
+    currentIndex++;
+    if (currentIndex >= cards.length) {
+      currentIndex = 0;
+    }
+    showCard(currentIndex);
   });
+
+  // Show Card 1
+  showCard(currentIndex);
 });
 
 // Testimoni Section
