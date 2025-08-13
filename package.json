@@ -7,11 +7,11 @@
     "shx": "^0.4.0"
   },
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./src/css/input.css -o ./docs/css/style.css --watch",
-    "copy:html": "shx cp src/*.html docs/",
-    "copy:assets": "shx mkdir -p docs/images && shx cp -r src/images/* docs/images",
-    "copy:js": "shx mkdir -p docs/js && shx cp src/js/*.js docs/js",
-    "build:css": "npx tailwindcss -i ./src/css/input.css -o ./docs/css/style.css --minify",
+    "dev": "npx @tailwindcss/cli -i ./src/css/input.css -o ./public/css/style.css --watch",
+    "copy:html": "shx cp src/*.html public/",
+    "copy:assets": "shx mkdir -p public/images && shx cp -r src/images/* public/images",
+    "copy:js": "shx mkdir -p public/js && shx cp src/js/*.js public/js",
+    "build:css": "npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --minify",
     "build": "npm run copy:html && npm run copy:assets && npm run copy:js && npm run build:css"
   }
 }
